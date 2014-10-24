@@ -34,13 +34,6 @@ namespace FizzBuzzMVC.Controllers
                 }
             }
 
-            List<string> first = new List<string> { "A", "B" };
-
-            Dictionary<int,string> second = new Dictionary<int,string> { {1,"A"}, {2,"B"} };
-
-            var temp= from f in first
-                      join s in second on f equals second.Keys
-
             return View();
         }
 	}
